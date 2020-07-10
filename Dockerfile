@@ -7,8 +7,8 @@ LABEL maintainer="rahul.roy@in.ibm.com"
 EXPOSE 8080
 
 # The application's jar file (when packaged)
-ARG JAR_FILE=target/flighteventcpature-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/ibmeventstreams-sampleapp-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
-ADD ${JAR_FILE} flighteventcpature-0.0.1-SNAPSHOT.jar
+ADD ${JAR_FILE} ibmeventstreams-sampleapp-0.0.1-SNAPSHOT.jar
 # Run the jar file 
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/flighteventcpature-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/ibmeventstreams-sampleapp-0.0.1-SNAPSHOT.jar"]
