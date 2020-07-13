@@ -5,8 +5,7 @@
 replicaCount: 1
 
 image:
-  registry: docker.io
-  repository: royzlife/ibmeventstreams-sampleapp
+  repository: ibmstreamsampleacr.azurecr.io/rahulroy1/ibmeventstream-sampleapp
   tag: latest
   pullPolicy: IfNotPresent
 
